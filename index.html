@@ -19,13 +19,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-4" id="left-column">
-                <p>Search for a City</p>
-                <div class="row">
-                    <input id=input-city type="text"></input>
-                    <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <h5><strong>Search for a City</strong></h5>
+                <div class="row no-gutters">
+                    <div class="col-10">
+                        <input id=input-city type="text"></input>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
                     <span id="error"></span>
-                    <br>
-                    <br>
+                </div>
+                <br>
+                <div id="city-list">
                     <ul id=list></ul>
                 </div>
             </div>
@@ -44,31 +49,31 @@
                 <div class="row" id="extended-forcast">
                     <div class="card" id="day1">
                         <p id="date1"></p>
-                        <img id="img1"/>
+                        <img id="img1" />
                         <p>Temp: <span id="temp1"></span></p>
                         <p>Humidity: <span id="hum1"></span></p>
                     </div>
                     <div class="card" id="day2">
                         <p id="date2"></p>
-                        <img id="img2"/>
+                        <img id="img2" />
                         <p>Temp: <span id="temp2"></span></p>
                         <p>Humidity: <span id="hum2"></span></p>
                     </div>
                     <div class="card" id="day3">
                         <p id="date3"></p>
-                        <img id="img3"/>
+                        <img id="img3" />
                         <p>Temp: <span id="temp3"></span></p>
                         <p>Humidity: <span id="hum3"></span></p>
                     </div>
                     <div class="card" id="day4">
                         <p id="date4"></p>
-                        <img id="img4"/>
+                        <img id="img4" />
                         <p>Temp: <span id="temp4"></span></p>
                         <p>Humidity: <span id="hum4"></span></p>
                     </div>
                     <div class="card" id="day5">
                         <p id="date5"></p>
-                        <img id="img5"/>
+                        <img id="img5" />
                         <p>Temp: <span id="temp5"></span></p>
                         <p>Humidity: <span id="hum5"></span></p>
                     </div>
@@ -80,7 +85,6 @@
 
     <!-- jQuery JS -->
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="assets/js/keys.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
