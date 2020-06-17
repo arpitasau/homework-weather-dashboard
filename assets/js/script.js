@@ -17,8 +17,8 @@ $(document).ready(function () {
     }  
 
     //declaring variables
-    var queryUrl = "http://api.openweathermap.org/data/2.5/weather?q=";
-    var queryUrlForcast = "http://api.openweathermap.org/data/2.5/onecall?lat=";
+    var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
+    var queryUrlForcast = "https://api.openweathermap.org/data/2.5/onecall?lat=";
     var appID = "0a336261969aedd3330885cbe45f26cc";
 
     //adding event listener to search button
