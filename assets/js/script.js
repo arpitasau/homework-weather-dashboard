@@ -64,6 +64,7 @@ function showWeather(city) {
         }).then(function (response) {
             console.log(response);
             $("#city-name").text(response.name + " " + moment().format("(MM/DD/YYYY)"));
+            $("#main-img").attr("src", "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png")
             $("#temperature").text(response.main.temp + " " + "F");
             $("#wind-speed").text(response.wind.speed + " " + "MPH");
             $("#humidity").text(response.main.humidity + " " + "%");
