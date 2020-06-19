@@ -79,6 +79,16 @@ function showWeather(city) {
             }).then(function (responsefc) {
                 console.log(responsefc);
                 $("#uv").text(responsefc.current.uvi);
+                var uvIndex = (responsefc.current.uvi);
+                if(uvIndex > 8){
+                    $("#uv").addClass("red");
+                }
+                else if(uvIndex < 8 && uvIndex > 5 ){
+                    $("#uv").addClass("yellow");
+                }
+                if(uvIndex < 5){
+                    $("#uv").addClass("green");
+                }
 
                 $("#date1").text(moment().add(1, 'day').format("L"))
                 $("#date2").text(moment().add(2, 'day').format("L"))

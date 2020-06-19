@@ -78,3 +78,13 @@ ul{
      width: 50px;
      height: auto;
  } 
+ .red{
+     background-color: red;
+ }
+ .green{
+     background-color: green;
+ }
+ .yellow {
+     background-color: rgb(255, 255, 15);
+ }
+ 
